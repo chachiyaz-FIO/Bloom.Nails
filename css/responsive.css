@@ -1,68 +1,210 @@
-@media (max-width:900px){
+/*========================================
+            RESPONSIVE
+========================================*/
 
-.servicio{
 
-    flex-direction:column;
+@media(max-width:900px){
 
-    padding:70px 20px;
 
-    gap:40px;
+    section{
 
-}
-
-.reverse{
-
-    flex-direction:column;
-
-}
-
-.servicio-img img{
-
-    height:320px;
-
-}
-
-.servicio-info{
-
-    text-align:center;
-
-}
-
-.servicio-info ul{
-
-    text-align:left;
-
-    display:inline-block;
-
-}
-
-.servicio-info h3{
-
-    font-size:35px;
-
-}
-
-}
-@media(max-width:992px){
-
-    .beneficios{
-
-        grid-template-columns:repeat(2,1fr);
+        padding:70px 5%;
 
     }
 
-}
 
-@media(max-width:600px){
+    /*================
+        NAVBAR
+    ================*/
+
+    .navbar{
+
+        height:75px;
+
+        width:90%;
+
+    }
+
+
+    .logo img{
+
+        height:55px;
+
+    }
+
+
+    .nav-links{
+
+        gap:15px;
+
+    }
+
+
+    .nav-links a{
+
+        font-size:14px;
+
+    }
+
+
+    .btn-turno{
+
+        padding:10px 18px;
+
+        font-size:14px;
+
+    }
+
+
+
+    /*================
+            HERO
+    ================*/
+
+
+    .hero{
+
+        height:75vh;
+
+        background-size:cover;
+
+        background-position:center;
+
+    }
+
+
+    .btn-hero{
+
+        right:50%;
+
+        transform:translateX(50%);
+
+        top:75%;
+
+        padding:15px 30px;
+
+        font-size:16px;
+
+    }
+
+
+
+    /*================
+          SERVICIOS
+    ================*/
+
+
+    .servicio{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+        margin-bottom:60px;
+
+    }
+
+
+    .servicio-img img{
+
+        height:300px;
+
+    }
+
+
+    .servicio-info{
+
+        padding:30px 20px;
+
+    }
+
+
+    .servicio-info h3{
+
+        font-size:28px;
+
+    }
+
+
+
+    /*================
+          SOBRE MI
+    ================*/
+
+
+    .sobre-mi{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        text-align:center;
+
+    }
+
+
+    .sobre-img img{
+
+        width:280px;
+
+        height:380px;
+
+    }
+
+
+
+    /*================
+          GALERIA
+    ================*/
+
+
+    .grid-galeria{
+
+        grid-template-columns:repeat(2,1fr);
+
+        grid-auto-rows:180px;
+
+        gap:12px;
+
+        margin:40px auto;
+
+    }
+
+
+    .grande{
+
+        grid-column:span 2;
+
+    }
+
+
+    .alta{
+
+        grid-row:span 2;
+
+    }
+
+
+
+    /*================
+        BENEFICIOS
+    ================*/
+
 
     .beneficios{
 
         grid-template-columns:1fr;
 
+        gap:20px;
+
     }
 
-}
-@media(max-width:900px){
+
+
+    /*================
+        OPINIONES
+    ================*/
+
 
     .opiniones-grid{
 
@@ -70,14 +212,19 @@
 
     }
 
-}
-@media(max-width:768px){
+
+
+    /*================
+        CONTACTO
+    ================*/
+
 
     .contacto-info{
 
-        padding:35px 25px;
+        padding:35px 20px;
 
     }
+
 
     .contacto-info h2{
 
@@ -85,13 +232,13 @@
 
     }
 
+
     .info-item{
 
         flex-direction:column;
 
-        text-align:center;
-
     }
+
 
     .info-item h4,
     .info-item p{
@@ -100,8 +247,12 @@
 
     }
 
-}
-@media(max-width:900px){
+
+
+    /*================
+          FOOTER
+    ================*/
+
 
     .footer-contenedor{
 
@@ -109,54 +260,36 @@
 
         text-align:center;
 
-        gap:50px;
-
     }
 
-    .footer-logo img{
-
-        margin:auto auto 20px;
-
-    }
-
-    .footer-links ul{
-
-        align-items:center;
-
-    }
-
-    .footer-redes{
-
-        align-items:center;
-
-    }
 
 }
-@media(max-width:900px){
 
-    .grid-galeria{
 
-        grid-template-columns:repeat(2,1fr);
-
-        grid-auto-rows:220px;
-
-    }
-
-    .grande{
-
-        grid-column:span 2;
-
-    }
-
-}
 
 @media(max-width:600px){
+
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+
+    .hero{
+
+        height:65vh;
+
+    }
+
 
     .grid-galeria{
 
         grid-template-columns:1fr;
 
     }
+
 
     .grande,
     .alta{
@@ -166,5 +299,34 @@
         grid-row:span 1;
 
     }
+
+
+    .titulo-lightbox{
+
+        font-size:20px;
+
+    }
+
+
+    .imagen-lightbox{
+
+        max-width:95vw;
+
+        max-height:70vh;
+
+    }
+
+
+    .anterior,
+    .siguiente{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:24px;
+
+    }
+
 
 }

@@ -58,7 +58,11 @@ img{
 
     display:block;
 
+    width:100%;
+
     max-width:100%;
+
+    height:auto;
 
 }
 
@@ -346,10 +350,15 @@ header{
 .servicio-img img{
 
     width:100%;
+
     height:450px;
-    object-fit:contain;
+
+    object-fit:cover;
+
     object-position:center;
+
     background:#fff;
+
     transition:.5s;
 
 }
@@ -427,7 +436,9 @@ header{
 
 .sobre-img img{
 
-    width:400px;
+    width:100%;
+
+    max-width:400px;
 
     height:500px;
 
@@ -435,11 +446,8 @@ header{
 
     object-position:center;
 
-    border-radius:30px;
-
-    box-shadow:var(--sombra);
-
 }
+
 /*==========================================
             GALERÍA PREMIUM
 ==========================================*/
@@ -1177,5 +1185,122 @@ header{
         opacity:1;
 
     }
+
+}
+/*==================================
+        AJUSTES MOVIL EXTRA
+==================================*/
+
+
+@media(max-width:600px){
+
+
+    section{
+
+        padding:60px 20px;
+
+    }
+
+
+    .hero{
+
+        height:70vh;
+
+        background-size:cover;
+
+    }
+
+
+    .btn-hero{
+
+        right:50%;
+
+        transform:translateX(50%);
+
+        top:75%;
+
+        white-space:nowrap;
+
+    }
+
+
+
+    .servicio{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+        margin-bottom:60px;
+
+    }
+
+
+
+    .servicio:nth-child(even){
+
+        padding:30px 20px;
+
+    }
+
+
+
+    .servicio-img img{
+
+        height:260px;
+
+    }
+
+
+
+    .sobre-mi{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+
+
+    .sobre-img img{
+
+        height:380px;
+
+        margin:auto;
+
+    }
+
+
+
+    .grid-galeria{
+
+        grid-template-columns:repeat(2,1fr);
+
+        grid-auto-rows:160px;
+
+        gap:10px;
+
+    }
+
+
+
+    .grande,
+    .alta{
+
+        grid-column:span 1;
+
+        grid-row:span 1;
+
+    }
+
+
+
+    .contacto-info{
+
+        padding:30px 20px;
+
+    }
+
 
 }
