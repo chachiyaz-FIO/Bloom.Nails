@@ -1,0 +1,1 @@
+console.log("Bloom Nails cargado correctamente 💅");
